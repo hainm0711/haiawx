@@ -1,6 +1,6 @@
 ---
 - name: show interface
-  host: all
+  host: routers
   tasks:
     - name: set ip address loopback 0 router
       iso_l3_interface:
