@@ -5,15 +5,15 @@
   tasks:
   - name: interfaceIPaddress
     ios_config:
-    parents: interface Ethernet0/1
-    lines:
-    - ip address 192.168.1.10 255.255.255.0
-    - no shutdown
-    - full-duplex
+      parents: interface Ethernet0/1
+      lines:
+        - ip address 192.168.1.10 255.255.255.0
+        - no shutdown
+        - full-duplex
   - name: loopbackinterface
     ios_config:
-    parents: interface Loopback0
-    lines:
-    - ip address 1.1.1.1 255.255.255.255
-    - no shutdown
+      parents: interface Loopback0
+      lines:
+        - ip address 1.1.1.1 255.255.255.255
+        - no shutdown
     
