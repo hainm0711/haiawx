@@ -4,7 +4,7 @@
 - gather_facts: no
 - tasks:
 - name: configure provider
-- set_fact:
+-- set_fact:
 - provider:
 - username: cisco
 - password: cisco
