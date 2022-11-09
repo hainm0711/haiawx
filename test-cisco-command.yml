@@ -3,15 +3,15 @@ hosts: all
 gather_facts: no
 tasks:
   - name: interfaceIPaddress
-  cisco.ios.ios_config:
+    ios_config:
     parents: interface Ethernet0/1
     lines:
     - ip address 192.168.1.10 255.255.255.0
     - no shutdown
     - full-duplex
-  tasks:
+tasks:
   - name: loopbackinterface
-  cisco.ios.ios_config:
+    ios_config:
     parents: interface Loopback0
     lines:
     - ip address 1.1.1.1 255.255.255.255
