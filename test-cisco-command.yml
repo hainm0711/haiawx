@@ -10,7 +10,7 @@
     - no shutdown
     - full-duplex
     parents: interface Ethernet0/1
-  
+  tasks:
   - name: loopbackinterface
   cisco.ios.ios_config:
     lines:
