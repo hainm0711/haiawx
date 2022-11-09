@@ -1,5 +1,4 @@
 ---
-- name: TestCiscoCommand
   hosts: all
   gather_facts: no
   tasks:
