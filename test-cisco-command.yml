@@ -6,11 +6,11 @@
 - name: interface IP address
   ios_config:
     provider: "{{provider}}"
-      lines:
-      - ip address 192.168.1.10 255.255.255.0
-      - no shutdown
-      - full-duplex
-      parents: interface Ethernet 0/1
+    lines:
+    - ip address 192.168.1.10 255.255.255.0
+    - no shutdown
+    - full-duplex
+    parents: interface Ethernet 0/1
 - name: loopback interface
   ios_config:
     provider: "{{provider}}"
