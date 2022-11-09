@@ -24,7 +24,7 @@
         - show ip int brief
     register: show_ip
   - debug: var=show_ip.stdout_lines
-  - name: showInterface
+  - name: SaveConfigure
     ios_command:
       commands:
         - wr
