@@ -10,7 +10,6 @@
     - ip address 192.168.1.10 255.255.255.0
     - no shutdown
     - full-duplex
-  tasks:
   - name: loopbackinterface
     ios_config:
     parents: interface Loopback0
