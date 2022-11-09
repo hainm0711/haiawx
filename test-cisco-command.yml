@@ -1,7 +1,8 @@
 ---
-hosts: all
-gather_facts: no
-tasks:
+- name: test
+  hosts: all
+  gather_facts: no
+  tasks:
   - name: interfaceIPaddress
     ios_config:
     parents: interface Ethernet0/1
@@ -9,7 +10,7 @@ tasks:
     - ip address 192.168.1.10 255.255.255.0
     - no shutdown
     - full-duplex
-tasks:
+  tasks:
   - name: loopbackinterface
     ios_config:
     parents: interface Loopback0
