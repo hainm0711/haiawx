@@ -9,7 +9,12 @@
       lines:
         - des test
         - no ip address
-        - ip address 218.100.10.10 255.255.255.0
+        - ip address 218.100.14.10 255.255.255.0
         - no shutdown
         - duplex full
- 
+  - name: loopbackinterface
+    ios_config:
+      parents: interface loopback 0
+      lines:
+        - ip address 1.1.1.1 255.255.255.255
+        - no shutdown
