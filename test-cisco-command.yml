@@ -18,3 +18,9 @@
       lines:
         - ip address 1.1.1.1 255.255.255.255
         - no shutdown
+  - name: showInterface
+    ios_command:
+      commands:
+        - show ip int brief
+    register: show_ip
+  - debug: var=show_ip.stdout_lines[/SIZE]
