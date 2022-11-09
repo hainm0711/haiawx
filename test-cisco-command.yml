@@ -2,8 +2,8 @@
 - name: TestCiscoCommand
 - hosts: all
 - gather_facts: no
-tasks:
- - name: configure provider
+- tasks:
+-- name: configure provider
  set_fact:
  provider:
  username: cisco
