@@ -1,8 +1,8 @@
 ---
 - name: TestCiscoCommand
-- hosts: all
-- gather_facts: no
-- tasks:
+  - hosts: all
+  - gather_facts: no
+  - tasks:
   - name: interfaceIPaddress
   cisco.ios.ios_config:
     lines:
@@ -10,7 +10,7 @@
     - no shutdown
     - full-duplex
     parents: interface Ethernet0/1
-- name: loopbackinterface
+  - name: loopbackinterface
   cisco.ios.ios_config:
     lines:
     - ip address 1.1.1.1 255.255.255.255
