@@ -3,7 +3,7 @@
 - hosts: all
 - gather_facts: no
 - tasks:
-- name: interface IP address
+- name: interfaceIPaddress
   ios_config:
     provider: "{{provider}}"
     lines:
@@ -12,7 +12,7 @@
     - full-duplex
     parents:
     - interface Ethernet0/1
-- name: loopback interface
+- name: loopbackinterface
   ios_config:
     provider: "{{provider}}"
     lines:
