@@ -13,7 +13,7 @@
         - full-duplex
   - name: loopbackinterface
     ios_config:
-      parents: interface Loopback 0
+      parents: interface loopback 0
       lines:
         - ip address 1.1.1.1 255.255.255.255
         - no shutdown
